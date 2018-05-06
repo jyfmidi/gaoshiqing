@@ -69,10 +69,10 @@ $form.submit(function () {
     type: "POST",
     beforeSend: function () {
       if (!$answer.val()) {
-        showMsg('浣犵湡灏卞繊蹇冧氦鐧藉嵎涔圤_o锛�');
+        showMsg('nothing');
         return false
       } else if (answer_type == 'number' && !$.isNumeric($answer.val())) {
-        showMsg('鍟婂挧锛屼綘寮勭殑杩欐槸浠€涔堜笢涓�...<br>杈撳叆鏁板瓧鍟婂厔寮�');
+        showMsg('not a number');
         return false
       }
       
